@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block background%}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+ <h1>Acerca de Mi</h1>
+ <span class="subheading">Biografía</span>
+{% endblock %}
+
+
+{% block content %}
+<div class = 'row'>
+<div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/yo.jpg'%}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Esteban Fabian Vasquez Castellanos</h2>   
+          <p>Egresado de la Universidad de la salle bajio, actualmente estudiando código.</p>
+          <p>Apasionado por la tecnología y aprender, amo la música y desarrollarme en todos los sentidos, además me encanta las comunidades del ecosistema tecnológico de GDL. Pienso que estamos aqui para crear cosas que tengan sentido</p>
+        </div> 
+</div>
+ 
+{% endblock %}
+
